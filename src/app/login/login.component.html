@@ -1,0 +1,20 @@
+<div class="row">
+  <form materialize id="login" class="valign-wrapper" (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="row center-align">
+      <div class="col s6 offset-s4">
+        <div class="input-field col s12 white-text">
+          <label for="userLogin" class="yellow-text" data-error="wrong" data-success="right">Usuario</label>
+          <input type="text" id="userLogin" ngModel name="userLogin" class="validate" required aria-required="true"/>
+        </div>
+        <div class="input-field col s12 white-text">
+          <label for="userPass" class="yellow-text" data-error="wrong" data-success="right">Contraseña</label>
+          <input type="text" id="userPass" ngModel name="userPass" class="validate" required aria-required="true"/>
+        </div>
+      </div>
+      <div class="col s6 offset-s4">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

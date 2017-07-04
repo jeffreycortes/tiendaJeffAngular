@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col s6">
+    <ul class="collection">
+        <li class="collection-item avatar" *ngFor="let producto of productos">
+          <img src="{{producto.imagen}}" alt="" class="circle">
+          <span class="title">{{producto.nombre}}</span>
+          <p>
+            <strong>Subtotal:</strong> ${{producto.precio * producto.unidades}}
+             <br>
+             <strong>Unidades:</strong> {{producto.unidades}}
+          </p>
+        </li>
+      </ul>
+  </div>
+  <div class="col s6">
+    <h5>Total Items agregados: {{numItems}}</h5>
+    <h5>Precio Total: ${{precio}}</h5>
+    <a class="waves-effect red btn" (click)="limpiarCarrito()">Cancelar</a>
+    <a class="waves-effect green btn" (click)="pagarItems()">Pagar</a>
+  </div>
+</div>

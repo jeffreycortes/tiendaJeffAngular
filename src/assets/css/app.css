@@ -1,0 +1,16 @@
+body {
+  background: url(../image/Canio_Cristales.jpg) no-repeat fixed -90px;
+}
+#BodyColorHead{
+  background: #2196F3 fixed;
+  width: 100%;
+  height: 40vh;
+  position: fixed;
+  z-index: -1;
+}
+#Contenedor{
+  position: static;
+}
+form *{
+  color: #fff !important;
+}

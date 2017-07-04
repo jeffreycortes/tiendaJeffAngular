@@ -1,0 +1,38 @@
+<div class="divider"></div>
+<div class="row">
+  <div class="input-field col s12">
+    <label>¿Que estas buscando?</label>
+    <input type="text" id="valorProducto" length="150" (keyup)="onSearch(valorProducto.value)" #valorProducto>
+  </div>
+</div>
+
+<h3>Productos Disponibles</h3>
+<div class="divider"></div>
+<div class="row">
+  <div class="col s12 m3" *ngFor="let producto of productos">
+    <div class="card medium">
+      <div class="card-image">
+        <img src="{{producto.imagen}}">
+        <span class="card-title">{{producto.nombre}}</span>
+      </div>
+      <div class="card-content">
+          <p>
+            Unidades: {{producto.unidades}}
+            <br>
+            Precio: ${{producto.precio}}
+          </p>
+      </div>
+      <div class="card-action">
+          <div class="input-field col s12 center-align">
+            <a [routerLink]="['/Vitrina/Producto', producto._id]" class="waves-effect waves-teal">Ver Más</a>
+          </div>
+          <div class="input-field col s6">
+            <a class="btn-floating btn-large waves-effect waves-light red" title="Añadir al Carrito" (click)="addItem(producto._id,producto.nombre,  numItems.value, producto.precio, producto.imagen)"><i class="material-icons">add</i></a>
+          </div>
+          <div class="input-field col s6">
+            <input type="number" id="ItemsAdd" value="0" size="1" maxlength="2" min="0" max="{{producto.unidades}}" #numItems/>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
