@@ -2,7 +2,8 @@
 
 Proyecto de ejemplo de un carrito de compras o tienda online, con temática de frutas y verduras, desarrollado con:
 
-- Angular v1.0.4.
+- Angular v2
+- Angular CLi v1.0.4.
 - NodeJs v8.9.0
 - Mongoose v3.4
 
