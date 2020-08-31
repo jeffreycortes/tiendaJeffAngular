@@ -1,28 +1,16 @@
 # TiendaJeff
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
+Proyecto de ejemplo de un carrito de compras o tienda online con tematica de frutas y verduras, desarrollado con:
 
-## Development server
+- Angular v1.0.4.
+- NodeJs v
+- Mongoose v
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Servir el proyecto
 
-## Code scaffolding
+Para ejeuctar el proyecto web ejecutar:
+- Start_App: Para servir el proyecto web (Front)
+- Start_Server: Para ejecutar el API de servidor. Es necesario tener activo el servicio de BD de Mongoose.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Base de datos
+Se agrega un archivo de excel en la ruta server/BD.xlsx con los comando de Mongoose necesarios para crear la BD y las rutas de las imagenes y precios que se deben registrar previamente.
